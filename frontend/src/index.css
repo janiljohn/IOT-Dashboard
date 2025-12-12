@@ -1,23 +1,23 @@
 :root {
-  /* Cyberpunk-inspired color scheme */
-  --bg-primary: #0a0e17;
-  --bg-secondary: #111827;
-  --bg-card: #1a2234;
-  --bg-card-hover: #1f2937;
+  /* InfernoGuard color scheme */
+  --bg-primary: #0f0a0a;
+  --bg-secondary: #1a0f0f;
+  --bg-card: #251212;
+  --bg-card-hover: #2f1818;
   
-  --accent-cyan: #00f0ff;
-  --accent-cyan-dim: rgba(0, 240, 255, 0.2);
-  --accent-orange: #ff6b35;
-  --accent-orange-dim: rgba(255, 107, 53, 0.2);
-  --accent-green: #00ff88;
-  --accent-red: #ff3366;
+  --accent-cyan: #ff4500; /* Orange Red (Fire) - Replaces the main Cyan brand color */
+  --accent-cyan-dim: rgba(255, 69, 0, 0.2);
+  --accent-orange: #ff8c00; /* Dark Orange */
+  --accent-orange-dim: rgba(255, 140, 0, 0.2);
+  --accent-green: #32cd32; /* Keep Green for "Connected/Safe" status */
+  --accent-red: #ff0000; /* Bright Red */
   
-  --text-primary: #f0f4f8;
-  --text-secondary: #94a3b8;
-  --text-dim: #64748b;
+  --text-primary: #fff0f0;
+  --text-secondary: #ffbaba;
+  --text-dim: #8a6a6a;
   
-  --border-color: rgba(0, 240, 255, 0.15);
-  --border-glow: rgba(0, 240, 255, 0.4);
+  --border-color: rgba(255, 69, 0, 0.25);
+  --border-glow: rgba(255, 69, 0, 0.5);
   
   --font-display: 'Outfit', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
@@ -52,8 +52,8 @@ body {
   right: 0;
   bottom: 0;
   background-image: 
-    linear-gradient(rgba(0, 240, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(255, 69, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 69, 0, 0.05) 1px, transparent 1px);
   background-size: 50px 50px;
   pointer-events: none;
   z-index: 0;
@@ -66,7 +66,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(ellipse at 50% 0%, rgba(0, 240, 255, 0.1) 0%, transparent 60%);
+  background: radial-gradient(ellipse at 50% 0%, rgba(255, 69, 0, 0.15) 0%, transparent 60%);
 }
 
 /* Header */
@@ -74,7 +74,7 @@ body {
   position: relative;
   z-index: 10;
   padding: 1.5rem 2rem;
-  background: linear-gradient(180deg, rgba(10, 14, 23, 0.95) 0%, rgba(10, 14, 23, 0.8) 100%);
+  background: linear-gradient(180deg, rgba(15, 10, 10, 0.95) 0%, rgba(15, 10, 10, 0.8) 100%);
   border-bottom: 1px solid var(--border-color);
   backdrop-filter: blur(10px);
 }
@@ -560,4 +560,3 @@ body {
     font-size: 2rem;
   }
 }
-
